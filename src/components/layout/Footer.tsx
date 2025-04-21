@@ -37,7 +37,7 @@ export default function Footer() {
           <div className="col-span-2">
             <Link href="/">
               <a className="flex items-center">
-                <span className="text-primary-500 text-2xl font-extrabold">Ethan</span>
+                <span className="text-primary-500 text-2xl font-extrabold">Alura</span>
                 <span className="ml-1 text-white text-2xl font-medium">Calling</span>
               </a>
             </Link>
@@ -100,7 +100,7 @@ export default function Footer() {
         
         <div className="mt-12 pt-8 border-t border-gray-800">
           <p className="text-base text-gray-400 text-center">
-            &copy; {new Date().getFullYear()} Ethan Calling System. All rights reserved.
+            &copy; {new Date().getFullYear()} ALura Calling System. All rights reserved.
           </p>
         </div>
       </div>

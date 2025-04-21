@@ -46,7 +46,7 @@ export default function AboutSection() {
           </div>
 
           <p className="mt-1 text-3xl font-sans font-extrabold text-white sm:text-4xl lg:text-5xl">
-            Why choose <GradientText>Ethan Calling System</GradientText>
+            Why choose <GradientText>Alura</GradientText>
           </p>
           <p className="max-w-3xl mt-5 mx-auto font-inter text-lg text-gray-300">
             We're on a mission to transform how businesses connect with their
@@ -64,7 +64,7 @@ export default function AboutSection() {
           <div>
             <div className="prose prose-lg text-gray-300 max-w-none font-inter">
               <p>
-                Founded in 2021, Ethan Calling System set out to solve the
+                Founded in 2021, Alura Calling System set out to solve the
                 common frustrations businesses face with traditional call center
                 solutions: complex setups, expensive hardware, and inflexible
                 systems.

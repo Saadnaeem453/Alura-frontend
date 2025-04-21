@@ -2,9 +2,9 @@ export const howItWorksSteps = [
   {
     id: 1,
     title: 'Create Your Account',
-    description: 'Sign up for Ethan Calling System and set up your organization profile.',
+    description: 'Sign up for Alura Calling System and set up your organization profile.',
     features: [
-      'Quick sign-up on Ethan Calling',
+      'Quick sign-up on Alura Calling',
       'Guided setup wizard for new users',
     ]
   },
