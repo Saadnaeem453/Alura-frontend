@@ -36,10 +36,9 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
           <div className="col-span-2">
             <Link href="/">
-              <a className="flex items-center">
-                <span className="text-primary-500 text-2xl font-extrabold">Alura</span>
-                <span className="ml-1 text-white text-2xl font-medium">Calling</span>
-              </a>
+            <a href="/">
+            <img src="/alura-logo.svg" alt="logo" className="h-10 w-auto" />
+          </a>
             </Link>
             <p className="mt-4 text-base text-gray-400">
               Transforming business communications with cloud-based calling solutions.
