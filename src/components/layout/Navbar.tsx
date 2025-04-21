@@ -43,7 +43,7 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Nav Links */}
-          <div className="hidden sm:flex sm:items-center sm:pl-20 sm:space-x-8">
+          <div className="hidden md:flex md:items-center md:pl-20 md:space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -57,20 +57,25 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Buttons */}
-          <div className="hidden sm:flex sm:items-center">
+          <div className="hidden md:flex md:items-center md:space-x-4">
+            {/* Sign In Button with shine effect */}
             <Button
               variant="outline"
-              className="px-5 py-2 rounded-full font-medium text-sm"
+              className="group relative px-5 py-2 rounded-full font-medium text-sm overflow-hidden border-opacity-70 hover:border-opacity-100 hover:scale-105 transition-all duration-300"
             >
-              Sign In
+              <span className="relative z-10">Sign In</span>
+              <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 group-hover:translate-x-full transition-all duration-700 ease-in-out"></span>
             </Button>
-            <Button className="px-5 py-2 rounded-full font-medium text-sm bg-gradient-to-r from-primary-500 to-purple-500 bg-size-200 animate-gradient-x hover:shadow-lg transition-all">
-              Get Started
+            
+            {/* Get Started Button with pulse and glow effect */}
+            <Button className="group relative px-5 py-2 rounded-full font-medium text-sm bg-gradient-to-r from-pink-500 to-purple-500 hover:shadow-[0_0_15px_rgba(168,85,247,0.6)] transition-all duration-300 overflow-hidden hover:scale-105">
+              <span className="relative z-10">Get Started</span>
+              <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-pink-500 via-purple-500 to-[@ffd095] bg-size-200 animate-gradient-x opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex items-center sm:hidden">
+          <div className="flex items-center md:hidden">
             <button
               type="button"
               className="text-gray-400 hover:text-white focus:outline-none"
@@ -90,7 +95,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="sm:hidden bg-secondary-800/95 backdrop-blur-md"
+            className="md:hidden bg-secondary-800/95 backdrop-blur-md"
           >
             <div className="pt-2 pb-3 space-y-1">
               {navLinks.map((link) => (
@@ -104,14 +109,19 @@ export default function Navbar() {
                 </a>
               ))}
               <div className="flex space-x-4 px-3 py-3">
+                {/* Mobile Sign In Button with shine effect */}
                 <Button
                   variant="outline"
-                  className="flex-1 px-3 py-2 rounded-full font-medium text-sm"
+                  className="group relative flex-1 px-3 py-2 rounded-full font-medium text-sm overflow-hidden border-opacity-70 hover:border-opacity-100 transition-all duration-300"
                 >
-                  Sign In
+                  <span className="relative z-10">Sign In</span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 group-hover:translate-x-full transition-all duration-700 ease-in-out"></span>
                 </Button>
-                <Button className="flex-1 px-3 py-2 rounded-full font-medium text-sm bg-gradient-to-r from-primary-500 to-purple-500">
-                  Get Started
+                
+                {/* Mobile Get Started Button with pulse and glow effect */}
+                <Button className="group relative flex-1 px-3 py-2 rounded-full font-medium text-sm bg-gradient-to-r from-pink-500 to-purple-500 hover:shadow-[0_0_10px_rgba(168,85,247,0.5)] transition-all duration-300 overflow-hidden">
+                  <span className="relative z-10">Get Started</span>
+                  <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-pink-500 via-purple-500 to-[#ffd095] bg-size-200 animate-gradient-x opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                 </Button>
               </div>
             </div>

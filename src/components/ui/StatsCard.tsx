@@ -17,7 +17,7 @@ const StatsCard = ({ title, value, description, delay = 0 }: StatsCardProps) => 
       className="relative w-full h-48 rounded-xl overflow-hidden"
     >
       <motion.div
-        className="absolute w-2 h-2  rounded-full border  bg-gradient-to-r from-pink-400 via-purple-400 to-yellow-300 z-10 shadow-[0_0_10px_#ffffff]"
+        className="absolute w-2 h-2  rounded-full border  bg-gradient-to-r from-pink-400 via-purple-400 to-[#ffd095] z-10 shadow-[0_0_10px_#ffffff]"
         animate={{
           top: ['10%', '10%', '90%', '90%', '10%'],
           right: ['10%', '90%', '90%', '10%', '10%'],
@@ -32,9 +32,9 @@ const StatsCard = ({ title, value, description, delay = 0 }: StatsCardProps) => 
       />
 
       {/* Card content */}
-      <div className="h-full flex flex-col items-center justify-center p-16">
+      <div className="h-full flex flex-col items-center justify-center mt-2 p-4">
         <div className="text-white text-4xl font-bold mb-2">{value}</div>
-        <div className="text-gray-300 text-lg">{title}</div>
+        <div className="text-gray-300 text-base">{title}</div>
         {description && (
           <div className="text-gray-400 text-sm mt-2">{description}</div>
         )}

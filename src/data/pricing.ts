@@ -25,7 +25,6 @@ export const pricingPlans = [
       '50 agents',
       'Advanced analytics and reporting',
       'Priority email and chat support',
-      'CRM integration'
     ],
     isPopular: true,
     buttonText: 'Get Started'
@@ -39,10 +38,8 @@ export const pricingPlans = [
       '100,000 minutes/month',
       'Unlimited Twilio numbers',
       'Unlimited agents',
-      'Enterprise analytics with custom reports',
+      'Enterprise analytics ',
       '24/7 priority support with dedicated manager',
-      'Custom integrations and API access',
-      'SLA guarantees'
     ],
     isPopular: false,
     buttonText: 'Contact Sales'

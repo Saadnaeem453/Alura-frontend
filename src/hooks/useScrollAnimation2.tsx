@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 export function useScrollAnimation2() {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: false, // Keep false for debugging, can set to true later
+    triggerOnce: true, // Keep false for debugging, can set to true later
     threshold: 0.2, // Increased from 0.1 for better trigger accuracy
     rootMargin: '-50px 0px -100px 0px', // Adjusted margins
   });

@@ -44,10 +44,10 @@ export default function CTASection() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="mt-8 lg:mt-0 lg:ml-8 flex flex-col sm:flex-row justify-center lg:justify-end space-y-4 sm:space-y-0 sm:space-x-4"
             >
-              <Button className="px-8 py-6 text-base font-medium rounded-lg text-primary-600 bg-white hover:bg-gray-100 transition-all shadow-lg">
+              <Button className="px-8 py-6 text-base font-medium rounded-lg text-primary-600 bg-white transition-all">
                 Get Started
               </Button>
-              <Button variant="outline" className="px-8 py-6 text-base font-medium rounded-lg text-white bg-primary-800/40 backdrop-blur-sm hover:bg-primary-800/60 border-transparent transition-all">
+              <Button variant="outline" className="px-8 py-6 text-base font-medium rounded-lg text-white bg-primary-800/40 backdrop-blur-sm hover:bg-pink-800/60 border-transparent transition-all">
                 Schedule Demo
               </Button>
             </motion.div>

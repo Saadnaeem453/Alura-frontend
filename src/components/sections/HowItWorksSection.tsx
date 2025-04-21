@@ -242,7 +242,7 @@ export default function HowItWorksSection() {
                           {/* Gradient Line */}
                           <div className="h-1 w-24 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full mt-2 mb-4" />
 
-                          <p className="mt-3 font-inter text-lg text-gray-300">
+                          <p className="mt-3 max-w-lg font-inter text-lg text-gray-300">
                             {step.description}
                           </p>
 

@@ -51,7 +51,7 @@ export default function PricingCard({
       className="relative group"
     >
       <div 
-        className={`h-full ${
+        className={`h-full cursor-pointer ${
           isPopular 
             ? 'border-2 border-primary-500 shadow-lg shadow-primary-500/20' 
             : 'border border-gray-800 group-hover:border-gray-700'
@@ -59,7 +59,7 @@ export default function PricingCard({
       >
         {isPopular && (
           <div className="absolute -top-5 inset-x-0 flex justify-center">
-            <span className="px-4 py-1 rounded-full text-sm font-bold bg-primary-500 text-white">
+            <span className="px-4 py-1 rounded-full text-sm font-bold bg-gradient-to-r from-[#ff87bb] to-[#ffd095]  text-white">
               Most Popular
             </span>
           </div>
